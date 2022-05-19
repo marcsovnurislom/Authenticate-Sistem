@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+.h1{
+    text-align: center;
+
+}
+
+.features {
+    float: left;
+    color: #000;
+    margin-top: px;
+    text-align: center;
+    width: 15%;
+    display: inline-block;
+}
+.a{
+    display: inline-block;
+    text-align: center;
+    float: center;
+    color: red;
+    text-decoration: none;
+}
+.aptag {
+    margin-left: 37%;
+    font-size: 25px
+}
+.aptag2 {
+    margin-left: 37%;
+    font-size: 25px;
+    text-align: center
+}
+.aptag a {
+    color: black
+}
+
+
+form{
+    margin-left: 200%;
+    width: 500px;
+}
+btn-success{
+    margin-top: 5px
+}
+.form{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.span-tag{
+    color: red
+}
+
