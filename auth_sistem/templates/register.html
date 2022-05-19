@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="aptag">
+    <p class="a">Регистрация |</p><a href="{% url 'login' %}" class="a">| Авторизация</a>
+</div>
+<div class="features">
+    <form method="post">
+        {% csrf_token %}
+        <p class="form">Имя пользователя</p>{{ form.username}}
+        <p class="form">Имя</p>{{ form.first_name}}
+        <p class="form">Фамилия</p> {{form.last_name }}
+        <p class="form">Email Адресс</p> {{ form.email }}
+        <p class="form">Дата рождения</p> {{ form.birth_date }}
+        <p class="form">Пароль</p> {{ form.password1 }}
+        <p class="form">Подтверждение пароля</p>{{ form.password2 }} <br>
+        <span>{{ error }}</span>
+
+        <button class="btn btn-success" type="submit">Регистрация</button>
+    </form>
+</div>
+{% endblock content %}
