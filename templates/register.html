@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Регистрация{% endblock title %}
+
+{% block content %}
+<div class="auth-card card shadow-sm mx-auto">
+    <div class="card-body p-4">
+        <ul class="nav nav-pills nav-fill mb-4">
+            <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Вход</a></li>
+            <li class="nav-item"><span class="nav-link active">Регистрация</span></li>
+        </ul>
+        <form method="post">
+            {% csrf_token %}
+            {% include '_form_fields.html' %}
+            <button class="btn btn-success w-100" type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,13 @@
+.auth-card {
+    max-width: 440px;
+}
+
+.auth-card .nav-link {
+    cursor: pointer;
+}
+
+.helptext,
+.auth-card ul:not(.nav) {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
